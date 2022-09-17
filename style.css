@@ -23,13 +23,14 @@
 .box{
     display: flex;
     border: 1px solid black;
-    margin-left: 90px;
+    margin-left: 1.1rem;
+    margin-right: 1.1rem;
     
     border-radius: 10px;
-    width: 20vw;
+    /* width: 20vw; */
     height: 90%;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background-color: white;
     box-shadow:5px 5px black;
@@ -39,15 +40,49 @@ h1{
     align-items: center;
     font-size: 25px;
     margin-left: 3px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
 }
 img{
    margin:1rem 1rem;
    border-radius: 8px;
-   width: 13rem;
-   border: 1px solid black;
+   /* width: 13rem; */
+   border: 1px solid lavender;
    box-shadow: 2px 2px black;
 }
-h3{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+@media(max-width:670px){
+    .box{
+        width: 80%;
+    }
+    .email{
+font-size: small;
+    }
 }
+@media(max-width:560px){
+    .box{
+        width: 60%;
+        
+    }
+    .img{
+        width: 60%;
+    }
+    .email{
+        font-size: xx-small;
+    }
+}
+@media(max-width:460px){
+    .box{
+        width: 50%;
+        
+    }
+    .img{
+        width: 60%;
+    }
+    .email{
+        font-size: 5px;
+    }
+    h1{
+        font-size: small;
+    }
+}
+
+
